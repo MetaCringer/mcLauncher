@@ -1,7 +1,7 @@
 FROM redhat/ubi8 as builder
 COPY get_it.sh ./
 RUN \
-  dnf install -y java-17-openjdk-devel && \
+  dnf install -y java-17-openjdk-devel git && \
   ./get_it.sh \
   ./gradlew
 
