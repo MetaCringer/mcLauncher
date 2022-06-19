@@ -3,8 +3,7 @@ COPY get_it.sh ./
 RUN \
   dnf install -y java-17-openjdk-devel && \
   ./get_it.sh \
-
-RUN ./gradlew
+  ./gradlew
 
 #FROM redhat/ubi8
 #RUN \
